@@ -1,0 +1,56 @@
+.Slider {
+  &__container {
+    position: relative;
+    height: 27rem;
+    width: 100%;
+    border: solid 1px violet;
+
+    .Slider__slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      overflow: hidden;
+      border: solid 1px red;
+
+      &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+
+        //&--active {
+          //display: block;
+        //}
+      }
+    }
+
+    .Slider__controls {
+      &__left,
+      &__right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 3rem;
+        height: 5rem;
+        background-image: url("../images/control-arrow.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &__left {
+        left: 2rem;
+        transform: translateY(-50%) rotate(180deg);
+      }
+
+      &__right {
+        right: 2rem;
+      }
+    }
+  }
+
+}

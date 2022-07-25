@@ -1,0 +1,13 @@
+.Rents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  //justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 4rem;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  margin-top: 2.8rem;
+  padding: 3.7rem 3.3rem;
+}
