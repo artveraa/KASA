@@ -1,0 +1,48 @@
+.Infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .block-title {
+    h1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      color: #FF6060;
+      font-size: 2.4rem;
+
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .block-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .name {
+      font-size: 1.2rem;
+      color: #FF6060;
+      order: 1;
+      max-width: 7rem;
+      text-align: right;
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      overflow: hidden;
+      order: 2;
+      width: 4rem;
+      height: 4rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
