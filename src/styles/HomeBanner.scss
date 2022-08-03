@@ -11,6 +11,15 @@
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 768px) {
+        aspect-ratio: 335 / 111;
+        border-radius: 10px;
+
+        .About-content & {
+            aspect-ratio: 335 / 255;
+        }
+    }
+
     img {
         position: absolute;
         top: 0;
@@ -21,12 +30,23 @@
         object-fit: cover;
         object-position: center 44%;
         border-radius: 25px;
+
+        @media (max-width: 768px) {
+            border-radius: 10px;
+        }
     }
 
     h1 {
         z-index: 1;
         color: #FFF;
         font-size: 48px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+
+        @media (max-width: 768px) {
+            font-size: 1.6rem;
+            text-align: left;
+        }
     }
 
     &::after {

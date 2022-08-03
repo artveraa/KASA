@@ -2,6 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
   .block-title {
     h1 {
@@ -10,9 +17,12 @@
       align-items: flex-start;
       color: #FF6060;
       font-size: 2.4rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
 
       span {
         font-size: 1.2rem;
+
       }
     }
   }
@@ -28,6 +38,8 @@
       order: 1;
       max-width: 7rem;
       text-align: right;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
     }
 
     .profile-img {
@@ -43,6 +55,45 @@
         object-fit: cover;
         object-position: center;
       }
+    }
+  }
+
+  .tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    .tag {
+      background-color: #FF6060;
+      color: #fff;
+      padding: .5rem 1rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+    }
+  }
+
+  .block-rate {
+    display: flex;
+
+    .star {
+      font-size: 2.4rem;
+      color: #E3E3E3;
+
+      &.colored {
+        color: #FF6060;
+      }
+    }
+  }
+
+  .Infos-right {
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }

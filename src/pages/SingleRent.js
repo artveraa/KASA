@@ -9,7 +9,7 @@ import Collapse from "../components/Collapse";
 
 
 function SingleRent() {
-    const [rent, setRent] = useState({pictures: []});
+    const [rent, setRent] = useState({pictures: [], tags: [], host: {}});
     let {id} = useParams();
 
     useEffect(() => {

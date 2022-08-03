@@ -1,12 +1,12 @@
 import '../styles/HomeBanner.scss'
-import background from '../images/banner-home.jpg'
 
-function HomeBanner() {
+
+function HomeBanner(props) {
     return (
             <div className="img-container">
-                <h1>Chez vous, partout et ailleurs</h1>
+                <h1>{props.title}</h1>
                 <img className="banner-bg"
-                     src={background}
+                     src={props.background}
                      alt="banner"/>
             </div>
     );

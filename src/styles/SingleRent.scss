@@ -1,6 +1,17 @@
 .SingleRent {
+  padding: 2.6rem 6.6rem;
+
+  @media (max-width: 768px) {
+    padding: 2.6rem 1.6rem;
+  }
+
   .Collapses {
     display: flex;
     gap: 5rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 1rem;
+    }
   }
 }

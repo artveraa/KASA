@@ -15,6 +15,10 @@
   text-decoration: none;
   overflow: hidden;
 
+  @media (max-width: 768px) {
+    aspect-ratio: 355 / 255;
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -34,6 +38,8 @@
     z-index: 3;
     text-align: left;
     line-height: 142.6%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
   }
 
   img {
