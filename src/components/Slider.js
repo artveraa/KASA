@@ -1,6 +1,6 @@
 import '../styles/Slider.scss';
 import {useState} from 'react';
-import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from "react-icons/fa";
+import {IoIosArrowBack, IoIosArrowForward} from "react-icons/io";
 
 
 function Slider(props) {
@@ -21,8 +21,8 @@ function Slider(props) {
 
     return (
         <div className="Slider">
-            <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide}/>
-            <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide}/>
+            <IoIosArrowBack className="left-arrow" onClick={prevSlide}/>
+            <IoIosArrowForward className="right-arrow" onClick={nextSlide}/>
             {props.rent.pictures.map((slide, index) => {
                 return (
                     <div className={`slide ${index === current ? 'active' : ''}`} key={index}>
